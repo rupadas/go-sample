@@ -17,6 +17,6 @@ jobs:
       - name: Build Docker image
         run: docker build -t sample-go-app:latest .
       - name: Tag Docker image
-        run: docker tag myimage:latest rupadas/sample-go-app:latest
+        run: docker tag sample-go-app:latest rupadas/sample-go-app:latest
       - name: Push Docker image
         run: docker push rupadas/sample-go-app:latest
