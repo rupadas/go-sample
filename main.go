@@ -11,7 +11,7 @@ func main() {
 	r := mux.NewRouter()
 
 	r.HandleFunc("/users", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello, World Go!")
+		fmt.Fprintf(w, "Go Running!")
 	})
 
 	http.ListenAndServe(":8084", r)
